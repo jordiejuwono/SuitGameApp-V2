@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_yellow"
+    android:padding="@dimen/_8sdp"
+    tools:context=".ui.fragment.SliderFragment">
+
+    <TextView
+        android:id="@+id/tv_game_modes"
+        android:layout_width="match_parent"
+        android:text="@string/text_game_modes"
+        android:textSize="@dimen/_22ssp"
+        android:fontFamily="@font/press_start_2p"
+        android:textColor="@color/dark_blue"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_modes"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+        tools:src="@drawable/ic_robot"
+        app:layout_constraintTop_toBottomOf="@id/tv_game_modes"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_modes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Player VS Player"
+        app:layout_constraintTop_toBottomOf="@id/iv_modes"
+        android:textAlignment="center"
+        android:fontFamily="@font/font_vt323"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:textSize="@dimen/_24ssp"
+        android:textColor="@color/dark_blue"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="description"
+        app:layout_constraintTop_toBottomOf="@id/tv_modes"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/dark_blue"
+        android:fontFamily="@font/font_vt323"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_450sdp"
+        android:src="@drawable/bg_wallpaper"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_winner"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:src="@drawable/ic_winner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_background" />
+
+    <TextView
+        android:id="@+id/tv_winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/press_start_2p"
+        android:text="@string/tv_winner_com"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_winner" />
+
+    <TextView
+        android:id="@+id/tv_play_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_62sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:background="@drawable/bg_play_again"
+        android:fontFamily="@font/font_vt323"
+        android:paddingHorizontal="@dimen/_28sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/tv_play_again"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_winner" />
+
+    <TextView
+        android:id="@+id/tv_back_to_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_62sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/bg_bottom_right_shadow"
+        android:fontFamily="@font/font_vt323"
+        android:paddingHorizontal="@dimen/_28sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/text_back_to_mode"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_play_again" />
+
+    <TextView
+        android:id="@+id/tv_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_62sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/bg_bottom_right_shadow"
+        android:fontFamily="@font/font_vt323"
+        android:paddingHorizontal="@dimen/_28sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/tv_back_home"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_back_to_mode" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
