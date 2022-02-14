@@ -90,8 +90,8 @@ class GameActivity : AppCompatActivity() {
 
     }
 
-    private fun setEnableClickListener(enable: Boolean){
-        if (enable){
+    private fun setEnableClickListener(enable: Boolean) {
+        if (enable) {
             binding.flRock.isEnabled = true
             binding.flPaper.isEnabled = true
             binding.flScissors.isEnabled = true
@@ -261,7 +261,7 @@ class GameActivity : AppCompatActivity() {
             playerScore = 0
             enemyScore = 0
 
-            if (gameMode == PLAYER_VS_PLAYER_MODE){
+            if (gameMode == PLAYER_VS_PLAYER_MODE) {
                 pickTurn = GetWinner.PLAYER
             }
 
@@ -309,7 +309,8 @@ class GameActivity : AppCompatActivity() {
                     setTitle("Go to Homepage")
                     setMessage("Are you sure? Your game will be restarted")
                     setPositiveButton("Yes") { _, _ ->
-                        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+                        intent.flags =
+                            Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
                         startActivity(intent)
                         Log.d(TAG, "Back to Homepage")
                     }
@@ -387,7 +388,7 @@ class GameActivity : AppCompatActivity() {
         val rtl = AnimationUtils.loadAnimation(this, R.anim.anim_right_to_left)
 
         if (gameMode == PLAYER_VS_PLAYER_MODE) {
-            when (this.enemyHand){
+            when (this.enemyHand) {
                 HandInput.ROCK -> {
                     enemyHand.setImageResource(R.drawable.batu)
                     enemyHand.startAnimation(rtl)
@@ -444,7 +445,7 @@ class GameActivity : AppCompatActivity() {
                 Log.d(TAG, "DRAW")
             }
             WinningCondition.PLAYER_WINS -> {
-                if (gameMode == PLAYER_VS_PLAYER_MODE){
+                if (gameMode == PLAYER_VS_PLAYER_MODE) {
                     binding.tvVs.text = getString(R.string.text_player_1_win)
                 } else {
                     binding.tvVs.text = getString(R.string.text_result_player_win)
@@ -454,7 +455,7 @@ class GameActivity : AppCompatActivity() {
                 Log.d(TAG, "PLAYER WIN THIS ROUND")
             }
             WinningCondition.COMPUTER_WINS -> {
-                if (gameMode == PLAYER_VS_PLAYER_MODE){
+                if (gameMode == PLAYER_VS_PLAYER_MODE) {
                     binding.tvVs.text = getString(R.string.text_player_2_win)
                 } else {
                     binding.tvVs.text = getString(R.string.text_result_com_win)
@@ -484,7 +485,7 @@ class GameActivity : AppCompatActivity() {
                     playerScore = 0
                     enemyScore = 0
                     viewBinding()
-                    if (gameMode == PLAYER_VS_PLAYER_MODE){
+                    if (gameMode == PLAYER_VS_PLAYER_MODE) {
                         pickTurn = GetWinner.PLAYER
                     }
                     setOnClickListener()
@@ -510,12 +511,13 @@ class GameActivity : AppCompatActivity() {
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                     mAlertDialog.dismiss()
                     startActivity(intent)
-                    Toast.makeText(this, getString(R.string.text_back_home), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.text_back_home), Toast.LENGTH_SHORT)
+                        .show()
                 }
             }
 
             GetWinner.ENEMY -> {
-                mDialogView = if (gameMode == PLAYER_VS_PLAYER_MODE){
+                mDialogView = if (gameMode == PLAYER_VS_PLAYER_MODE) {
                     LayoutInflater.from(this).inflate(R.layout.dialog_player_two_wins, null)
                 } else {
                     LayoutInflater.from(this).inflate(R.layout.dialog_computer_wins, null)
@@ -553,7 +555,8 @@ class GameActivity : AppCompatActivity() {
                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                     mAlertDialog.dismiss()
                     startActivity(intent)
-                    Toast.makeText(this, getString(R.string.text_back_home), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.text_back_home), Toast.LENGTH_SHORT)
+                        .show()
                 }
             }
         }
@@ -562,14 +565,22 @@ class GameActivity : AppCompatActivity() {
 
     private fun gameFinished() {
         if (playerScore == 3) {
-            binding.tvScore.text = getString(R.string.text_you_win)
+            if (gameMode == PLAYER_VS_PLAYER_MODE) {
+                binding.tvScore.text = getString(R.string.text_p1_win)
+            } else {
+                binding.tvScore.text = getString(R.string.text_you_win)
+            }
             binding.tvVs.textSize = 16F
             binding.tvVs.text = getString(R.string.text_game_over)
             showWinnerDialog(GetWinner.PLAYER)
 
             Log.d(TAG, "gameFinished: ===PLAYER WINS===")
         } else if (enemyScore == 3) {
-            binding.tvScore.text = getString(R.string.text_com_wins)
+            if (gameMode == PLAYER_VS_PLAYER_MODE) {
+                binding.tvScore.text = getString(R.string.text_p2_win)
+            } else {
+                binding.tvScore.text = getString(R.string.text_com_wins)
+            }
             binding.tvVs.textSize = 16F
             binding.tvVs.text = getString(R.string.text_game_over)
             showWinnerDialog(GetWinner.ENEMY)
