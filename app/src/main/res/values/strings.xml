@@ -52,4 +52,6 @@
     <string name="text_back_home">Back to Home</string>
     <string name="text_p1_win">PLAYER 1 WIN!</string>
     <string name="text_p2_win">PLAYER 2 WIN!</string>
+    <string name="text_pvc_starting">Player vs Computer Mode Starting...</string>
+    <string name="text_pvp_starting">Player vs Player Mode Starting...</string>
 </resources>

@@ -12,7 +12,6 @@ import android.view.animation.AnimationUtils
 import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
 import com.jordiej.suitgame.R
 import com.jordiej.suitgame.databinding.ActivityGameBinding
 import com.jordiej.suitgame.databinding.CustomDialogFragmentBinding
@@ -20,7 +19,7 @@ import com.jordiej.suitgame.databinding.DialogBackBinding
 import com.jordiej.suitgame.enum.GetWinner
 import com.jordiej.suitgame.enum.HandInput
 import com.jordiej.suitgame.preference.UserPreference
-import com.jordiej.suitgame.ui.fragment.LandingPageActivity
+import com.jordiej.suitgame.ui.LandingPageActivity
 import com.jordiej.suitgame.utils.WinningCondition
 import com.shashank.sony.fancytoastlib.FancyToast
 import kotlin.random.Random

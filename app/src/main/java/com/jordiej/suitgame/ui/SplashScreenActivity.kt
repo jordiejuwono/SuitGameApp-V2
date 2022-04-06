@@ -7,8 +7,6 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import com.jordiej.suitgame.databinding.ActivitySplashScreenBinding
-import com.jordiej.suitgame.ui.fragment.LandingPageActivity
-import com.jordiej.suitgame.ui.game.GameActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 

@@ -15,7 +15,7 @@
             android:name=".ui.menu.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.fragment.LandingPageActivity"
+            android:name=".ui.LandingPageActivity"
             android:exported="false" />
         <activity
             android:name=".ui.SplashScreenActivity"

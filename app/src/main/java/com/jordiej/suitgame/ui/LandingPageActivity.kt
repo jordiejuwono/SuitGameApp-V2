@@ -1,4 +1,4 @@
-package com.jordiej.suitgame.ui.fragment
+package com.jordiej.suitgame.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.view.View
 import androidx.viewpager2.widget.ViewPager2
 import com.jordiej.suitgame.R
 import com.jordiej.suitgame.databinding.ActivityLandingPageBinding
+import com.jordiej.suitgame.ui.fragment.FormFragment
+import com.jordiej.suitgame.ui.fragment.SliderFragment
 import com.jordiej.suitgame.utils.FragmentAdapter
 
 class LandingPageActivity : AppCompatActivity() {

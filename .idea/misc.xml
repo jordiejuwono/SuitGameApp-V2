@@ -7,6 +7,7 @@
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/drawable/bg_modes_selected.xml" value="0.231" />
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/drawable/bg_next_round.xml" value="0.231" />
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/drawable/bg_player_com_hand.xml" value="0.174" />
+        <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/drawable/selector_modes.xml" value="0.174" />
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/activity_game.xml" value="0.264" />
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/activity_landing_page.xml" value="0.25" />
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/activity_menu.xml" value="0.25" />
@@ -14,10 +15,10 @@
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/custom_dialog_fragment.xml" value="0.25" />
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/dialog_back.xml" value="0.25" />
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/dialog_computer_wins.xml" value="0.25" />
-        <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/dialog_player_two_wins.xml" value="0.1" />
+        <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/dialog_player_two_wins.xml" value="0.2" />
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/dialog_player_wins.xml" value="0.25" />
         <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/fragment_form.xml" value="0.25" />
-        <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/fragment_slider.xml" value="0.25" />
+        <entry key="..\:/Users/jordi/Android Studio Projects/SuitGameAndroidStudioVersion/app/src/main/res/layout/fragment_slider.xml" value="0.1" />
         <entry key="..\:/Users/jordi/Binar Projects/Chapter 5 - Jordie/SuitGameAndroidStudioVersion/app/src/main/res/drawable/bg_before_selected.xml" value="0.1" />
         <entry key="..\:/Users/jordi/Binar Projects/Chapter 5 - Jordie/SuitGameAndroidStudioVersion/app/src/main/res/drawable/bg_bottom_right_shadow.xml" value="0.1655" />
         <entry key="..\:/Users/jordi/Binar Projects/Chapter 5 - Jordie/SuitGameAndroidStudioVersion/app/src/main/res/drawable/bg_instructions.xml" value="0.1" />
